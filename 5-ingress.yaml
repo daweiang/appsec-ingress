@@ -7,10 +7,10 @@ metadata:
 spec:
   tls:
    - hosts:
-      - wordpress.chili-staging.de
+      - wordpress.domain.com
      secretName: store-secret
   rules:
-  - host: wordpress.chili-staging.de
+  - host: wordpress.domain.com
     http:
       paths:
       - path: /
