@@ -1,0 +1,15 @@
+1) OpenSSL genrsa -out ca.key 2048
+2) openssl req -x509 \
+  -new -nodes  \
+  -days 365 \
+  -key ca.key \
+  -out ca.crt \
+  -subj "/CN=yourdomain.com"
+
+3) kubectl create secret tls my-tls-secret \
+--key ca.key \
+--cert ca.crt
+secret "my-tls-secret" created
+
+4) kubectl describe secrets/my-tls-secret
+
