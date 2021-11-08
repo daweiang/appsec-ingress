@@ -13,3 +13,7 @@ secret "my-tls-secret" created
 
 4) kubectl describe secrets/my-tls-secret
 
+
+another option can be found here:
+
+https://kubernetes.github.io/ingress-nginx/user-guide/tls/
