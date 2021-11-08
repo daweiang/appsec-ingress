@@ -1,0 +1,4 @@
+wget https://github.com/CheckPointSW/Infinity-Next/raw/main/deployments/cp-k8s-appsec-nginx-ingress-4.0.1.tgz -O cp-k8s-appsec-nginx-ingress-4.0.1.tgz
+helm install cp-k8s-appsec-nginx-ingress-4.0.1.tgz --name-template cp-appsec \
+--set appsec.agentToken="cp-XXXXXXXXXXXX" \
+--set appsec.persistence.storageClass="{storage class name}"
